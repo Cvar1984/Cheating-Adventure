@@ -1,4 +1,4 @@
-import memprocfs
+import memprocfs # https://github.com/ufrisk/MemProcFS/wiki/API_Python
 import win32api
 import json
 import struct
@@ -7,7 +7,7 @@ from calculations import worldToScreen
 from overlay import Overlay
 
 # Load offsets
-with open("offsets.json", "r") as file:
+with open("offsets.json", "r") as file: # https://raw.githubusercontent.com/a2x/cs2-dumper/main/output/offsets.json
     offsets = json.load(file)
 
 clientDll = offsets["client.dll"]
